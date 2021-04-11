@@ -4,8 +4,12 @@ import java.util.UUID;
 
 import lombok.Data;
 
-@Data
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Cor {
+    @Id
     private String id;
     private String sigla;
     private String nome;
